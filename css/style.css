@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    height: 20vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .titulo{
+    font-size: 4rem;
+}
+header p{
+    font-size: 2.3rem;
+}
+
+.container-main{
+    height: 80vh;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-main .formulario-cuadrado, .formulario-triangulo, .formulario-circulo {
+    background-color: burlywood;
+    width: 40rem;
+    height: 50rem;
+}
+
+.container-main h2{
+    font-size: 2rem;
+}
+
+.container-main label{
+    font-size: 1.7rem;
+}
+.container-main input {
+    width: 5rem;
+}
