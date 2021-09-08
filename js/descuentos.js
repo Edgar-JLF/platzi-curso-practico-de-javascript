@@ -7,6 +7,22 @@ function CalcularPrecioConDescuento(precio, descuento){
     return precioConDescuento;
 }
 
+function cuponesDescuento(cupon){
+    var cupones = [
+    {nombreCupon: 'edgar', descuentoCupon: 35},
+    {nombreCupon: 'Marisol', descuentoCupon: 15},
+    {nombreCupon: 'Rosaneli', descuentoCupon: 10}];
+
+    for (let index = 0; index <cupones.length; index++) {
+        const element = cupones[index];
+        if (element.nombreCupon === cupon) {
+            console.log("Cupon valido con el "+element.descuentoCupon+'% de descuento')
+        }else {
+            console.log('El cupon '+cupon+' no es valido')
+        }
+    }
+}
+
 function onClickButtonPriceDiscount() {
     const intputPrice = document.getElementById('input-price');
     const priceValue = intputPrice.value;
